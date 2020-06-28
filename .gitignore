@@ -1,0 +1,9 @@
+__pychache__
+
+*.*~
+
+*.pyc
+
+.env
+
+.idea
