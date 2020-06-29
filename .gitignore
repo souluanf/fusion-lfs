@@ -10,3 +10,5 @@ __pychache__
 
 htmlcov/*
 
+*/settings_local.py
+
