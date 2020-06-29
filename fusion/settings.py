@@ -6,7 +6,6 @@ try:
 except ImportError:
 	pass
 
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ENVIRONMENT = os.environ.get('ENVIRONMENT', 'development')
@@ -17,8 +16,6 @@ ENVIRONMENT = os.environ.get('ENVIRONMENT', 'development')
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 ALLOWED_HOSTS = ['*']
 
 # Application definition
