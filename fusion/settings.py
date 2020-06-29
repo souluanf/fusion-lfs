@@ -90,7 +90,7 @@ if ENVIRONMENT == 'local':
 			'PORT': '5432'
 		}
 	}
-elif ENVIRONMENT == 'travis-ci':
+elif ENVIRONMENT == 'test':
 	DATABASES = {
 		'default': {
 			'ENGINE': 'django.db.backends.sqlite3',
