@@ -1,0 +1,15 @@
+ language: python
+python:
+- 3.7.7
+install:
+- pip install -r requirements.txt
+script:
+- pytest
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  api_key:
+    secure: 5e8128bc-43b6-4496-bef9-49e794e3fc03
+  app: fusion-lfs
+  on:
+    repo: souluanf/fusion-lfs
