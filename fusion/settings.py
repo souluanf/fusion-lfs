@@ -10,11 +10,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ENVIRONMENT = os.environ.get('ENVIRONMENT', 'development')
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
-
 # SECURITY WARNING: don't run with debug turned on in production!
-ALLOWED_HOSTS = ['*']
+
+
+ALLOWED_HOSTS = ['https://fusion-lfs.herokuapp.com', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
@@ -43,6 +42,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'fusion.urls'
+
+SECRET_KEY = '41p9#s0+r0(re=yp2(3)3qjhm!28wv5wp6t9pl#&&b@t_3l#i8'
 
 TEMPLATES = [
 	{
